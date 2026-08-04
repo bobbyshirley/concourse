@@ -1,0 +1,75 @@
+import { Guest } from '@/types/concourse';
+
+export const MOCK_GUESTS: Guest[] = [
+  {
+    id: 'G-101',
+    familyName: 'Sterling Family',
+    primaryContact: 'Eleanor Sterling',
+    organization: 'Apex Global Media',
+    guestType: 'VIP',
+    partySize: 3,
+    photoUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
+    arrivalDate: '2026-08-04',
+    arrivalTime: '08:15 AM',
+    flightNumber: 'DL 1420',
+    airline: 'Delta',
+    airport: 'ATL',
+    flightStatus: 'Landed',
+    assignedHost: 'Marcus Vance',
+    hostPhone: '+1 (555) 019-2834',
+    hotel: 'The Grand Hyatt',
+    roomNumber: '1204',
+    checkInStatus: 'Checked In',
+    dietaryRestrictions: ['Gluten Free', 'Nut Allergy'],
+    timeline: [
+      { id: 't1', timestamp: '08:15 AM', user: 'System', action: 'FLIGHT_LANDED', notes: 'Flight DL 1420 landed safely at Gate B12.' },
+      { id: 't2', timestamp: '08:40 AM', user: 'Sarah K.', action: 'TRANSPORT_ASSIGNED', notes: 'Assigned SUV Driver #4 (Dave).' },
+      { id: 't3', timestamp: '09:12 AM', user: 'Marcus V.', action: 'HOST_GREETED', notes: 'Met primary contact at main lobby.' },
+    ]
+  },
+  {
+    id: 'G-102',
+    familyName: 'Chen',
+    primaryContact: 'Dr. David Chen',
+    organization: 'BioTech Innovations',
+    guestType: 'Speaker',
+    partySize: 1,
+    photoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
+    arrivalDate: '2026-08-04',
+    arrivalTime: '11:30 AM',
+    flightNumber: 'AA 402',
+    airline: 'American',
+    airport: 'ORD',
+    flightStatus: 'Delayed',
+    assignedHost: 'Elena Rostova',
+    hostPhone: '+1 (555) 014-9921',
+    hotel: 'Marriott Marquis',
+    roomNumber: '815',
+    checkInStatus: 'Pending',
+    dietaryRestrictions: ['Vegetarian'],
+    timeline: [
+      { id: 't1', timestamp: '10:00 AM', user: 'FlightAware Bot', action: 'FLIGHT_LANDED', notes: 'Flight delayed by 45 mins due to weather.' }
+    ]
+  },
+  {
+    id: 'G-103',
+    familyName: 'O\'Connor Group',
+    primaryContact: 'Siobhan O\'Connor',
+    organization: 'Grace Community Church',
+    guestType: 'Sponsor',
+    partySize: 5,
+    arrivalDate: '2026-08-04',
+    arrivalTime: '01:15 PM',
+    flightNumber: 'UA 1109',
+    airline: 'United',
+    airport: 'DEN',
+    flightStatus: 'On Time',
+    assignedHost: 'Unassigned',
+    hostPhone: 'N/A',
+    hotel: 'The Grand Hyatt',
+    roomNumber: 'TBD',
+    checkInStatus: 'Pending',
+    dietaryRestrictions: ['Halal'],
+    timeline: []
+  }
+];
