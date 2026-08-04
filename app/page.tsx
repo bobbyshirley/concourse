@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { MOCK_GUESTS } from '/lib/mock-data';
-import { Guest } from '/types/concourse';
+import { MOCK_GUESTS } from '@/lib/mock-data';
+import { Guest } from '@/types/concourse';
 import { 
   Users, UserCheck, Plane, AlertTriangle, 
   Bus, CheckCircle2, Clock, Phone, ChevronRight, X 
