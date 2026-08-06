@@ -1,6 +1,7 @@
 import React from 'react';
 import '@/app/globals.css';
 import Sidebar from '@/components/Sidebar';
+import HostSwitcher from '@/components/HostSwitcher';
 import { Search, Bell } from 'lucide-react';
 
 export const metadata = {
@@ -26,6 +27,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               />
             </div>
             <div className="flex items-center gap-3">
+              <HostSwitcher />
+              <div className="h-4 w-[1px] bg-zinc-800" />
               <button className="p-2 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900 rounded-md transition-colors relative">
                 <Bell className="h-4 w-4" />
                 <span className="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />

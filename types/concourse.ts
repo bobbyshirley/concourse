@@ -48,6 +48,8 @@ export interface Guest {
   // Basic Information
   familyName: string;
   primaryContact: string;
+  guestPhone: string;
+  guestEmail: string;
   organization: string;
   guestType: GuestType;
   partySize: number;
