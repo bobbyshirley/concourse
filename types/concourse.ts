@@ -29,6 +29,19 @@ export interface Attachment {
   uploadedBy: string;
 }
 
+export type HostAvailability = 'Full Day' | 'Morning Only' | 'Afternoon Only' | 'Evening Only' | 'On Call';
+export type HostCurrentStatus = 'On Duty' | 'Active' | 'Off Duty' | 'Unavailable';
+
+export interface Host {
+  id: string;
+  name: string;
+  photoUrl?: string;
+  phone: string;
+  availability: HostAvailability;
+  status: HostCurrentStatus;
+  assignedGuestIds: string[];
+}
+
 export interface Guest {
   id: string;
 

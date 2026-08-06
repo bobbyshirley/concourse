@@ -1,4 +1,4 @@
-import { Guest } from '@/types/concourse';
+import { Guest, Host } from '@/types/concourse';
 
 export const MOCK_GUESTS: Guest[] = [
   {
@@ -181,5 +181,50 @@ export const MOCK_GUESTS: Guest[] = [
     notes: 'Needs host assignment before Wednesday.',
     timeline: [],
     attachments: [],
+  },
+];
+
+export const MOCK_HOSTS: Host[] = [
+  {
+    id: 'H-01',
+    name: 'Marcus Vance',
+    photoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
+    phone: '+1 (555) 019-2834',
+    availability: 'Full Day',
+    status: 'On Duty',
+    assignedGuestIds: ['G-101'],
+  },
+  {
+    id: 'H-02',
+    name: 'Elena Rostova',
+    photoUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150',
+    phone: '+1 (555) 014-9921',
+    availability: 'Morning Only',
+    status: 'On Duty',
+    assignedGuestIds: ['G-102'],
+  },
+  {
+    id: 'H-03',
+    name: 'Priya Nair',
+    phone: '+1 (555) 022-7710',
+    availability: 'On Call',
+    status: 'Active',
+    assignedGuestIds: [],
+  },
+  {
+    id: 'H-04',
+    name: 'James Okafor',
+    phone: '+1 (555) 088-3345',
+    availability: 'Evening Only',
+    status: 'Unavailable',
+    assignedGuestIds: [],
+  },
+  {
+    id: 'H-05',
+    name: 'Renee Castillo',
+    phone: '+1 (555) 041-6620',
+    availability: 'Full Day',
+    status: 'Active',
+    assignedGuestIds: [],
   },
 ];
