@@ -11,13 +11,13 @@ import {
 
 const navigation = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
-  { name: 'Guests', href: '/', icon: Users },
+  { name: 'Guests', href: '/guests', icon: Users },
   { name: 'Hosts', href: '/hosts', icon: UserCheck },
   { name: 'Travel', href: '#', icon: Plane },
   { name: 'Transportation', href: '#', icon: Bus },
   { name: 'Hotels', href: '#', icon: Hotel },
   { name: 'Meals', href: '#', icon: Utensils },
-  { name: 'Seating', href: '#', icon: Armchair },
+  { name: 'Seating', href: '/seating', icon: Armchair },
   { name: 'Schedule', href: '#', icon: Calendar },
   { name: 'Activity', href: '#', icon: Activity },
   { name: 'Reports', href: '#', icon: BarChart3 },
