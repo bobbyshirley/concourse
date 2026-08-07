@@ -178,7 +178,7 @@ export const MOCK_GUESTS: Guest[] = [
     section: 'C',
     row: '8',
     seat: '15',
-    seatStatus: 'Available',
+    seatStatus: 'Reserved',
 
     lastContact: '2026-08-02 11:00 AM',
     emailSent: true,
